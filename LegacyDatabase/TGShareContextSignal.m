@@ -7,7 +7,7 @@
 #import <CommonCrypto/CommonKeyDerivation.h>
 #import <CommonCrypto/CommonCryptoError.h>
 
-#import "../../config.h"
+#import "../config.h"
 
 #import "TGLocalization.h"
 
@@ -162,23 +162,28 @@ static void TGShareLoggingFunction(NSString *format, va_list args)
                         [mtContext performBatchUpdates:^
                         {
                             [mtContext setSeedAddressSetForDatacenterWithId:1 seedAddressSet:[[MTDatacenterAddressSet alloc] initWithAddressList:@[
-                                                                                                                                                   [[MTDatacenterAddress alloc] initWithIp:@"149.154.175.50" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                // [[MTDatacenterAddress alloc] initWithIp:@"149.154.175.50" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                [[MTDatacenterAddress alloc] initWithIp:@"47.100.25.99" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
                             ]]];
 
                             [mtContext setSeedAddressSetForDatacenterWithId:2 seedAddressSet:[[MTDatacenterAddressSet alloc] initWithAddressList:@[
-                                [[MTDatacenterAddress alloc] initWithIp:@"149.154.167.51" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                // [[MTDatacenterAddress alloc] initWithIp:@"149.154.167.51" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                [[MTDatacenterAddress alloc] initWithIp:@"47.100.25.99" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
                             ]]];
 
                             [mtContext setSeedAddressSetForDatacenterWithId:3 seedAddressSet:[[MTDatacenterAddressSet alloc] initWithAddressList:@[
-                                [[MTDatacenterAddress alloc] initWithIp:@"149.154.175.100" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                // [[MTDatacenterAddress alloc] initWithIp:@"149.154.175.100" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                [[MTDatacenterAddress alloc] initWithIp:@"47.100.25.99" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
                             ]]];
 
                             [mtContext setSeedAddressSetForDatacenterWithId:4 seedAddressSet:[[MTDatacenterAddressSet alloc] initWithAddressList:@[
-                                [[MTDatacenterAddress alloc] initWithIp:@"149.154.167.91" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                // [[MTDatacenterAddress alloc] initWithIp:@"149.154.167.91" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                [[MTDatacenterAddress alloc] initWithIp:@"47.100.25.99" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
                             ]]];
 
                             [mtContext setSeedAddressSetForDatacenterWithId:5 seedAddressSet:[[MTDatacenterAddressSet alloc] initWithAddressList:@[
-                                [[MTDatacenterAddress alloc] initWithIp:@"149.154.171.5" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                // [[MTDatacenterAddress alloc] initWithIp:@"149.154.171.5" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
+                                [[MTDatacenterAddress alloc] initWithIp:@"47.100.25.99" port:443 preferForMedia:false restrictToTcp:false cdn:false preferForProxy:false]
                             ]]];
                         }];
                         

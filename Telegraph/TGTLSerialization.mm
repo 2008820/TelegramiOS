@@ -110,7 +110,10 @@
         [is close];
         return nil;
     }
-    
+  
+    if (topSignature == -1370486635) {
+      TGLog(@"-1370486635");
+    }
     __autoreleasing NSError *error = nil;
     id topObject = TLMetaClassStore::constructObject(is, topSignature, nil, nil, &error);
     if (error != nil)
